@@ -581,10 +581,6 @@ video {
   margin-top: 3.5rem;
 }
 
-.mt-36{
-  margin-top: 9rem;
-}
-
 .mt-4{
   margin-top: 1rem;
 }
@@ -595,6 +591,14 @@ video {
 
 .mt-8{
   margin-top: 2rem;
+}
+
+.mt-40{
+  margin-top: 10rem;
+}
+
+.mt-44{
+  margin-top: 11rem;
 }
 
 .inline{
@@ -696,6 +700,10 @@ video {
   text-align: center;
 }
 
+.font-mulish{
+  font-family: Mulish, sans-serif;
+}
+
 .text-2xl{
   font-size: 1.5rem;
   line-height: 2rem;
@@ -720,6 +728,11 @@ video {
   font-weight: 700;
 }
 
+.text-red-600{
+  --tw-text-opacity: 1;
+  color: rgb(220 38 38 / var(--tw-text-opacity, 1));
+}
+
 .text-red-700{
   --tw-text-opacity: 1;
   color: rgb(185 28 28 / var(--tw-text-opacity, 1));
@@ -730,17 +743,8 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
 }
 
-.text-red-600{
-  --tw-text-opacity: 1;
-  color: rgb(220 38 38 / var(--tw-text-opacity, 1));
-}
-
 .underline{
   text-decoration-line: underline;
-}
-
-body {
-  font-family: "Mulish", sans-serif;
 }
 
 html {

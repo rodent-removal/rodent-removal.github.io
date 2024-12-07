@@ -4,10 +4,6 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  font-family: "Mulish", sans-serif;
-}
-
 html {
   scroll-behavior: smooth;
 }
