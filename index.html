@@ -3,43 +3,76 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="./output.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="./output.css">
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
   <script src="./scripts.js" type="text/javascript" defer></script>
 </head>
 <body class="bg-black text-white pt-2">
-  <nav>
-    <div class="flex justify-between">
-      <div>
-        <img src="./images/logo.jpeg" class="w-32 h-18 inline" />
+  <header class="h-screen">
+    <nav>
+      <div class="flex justify-between">
+        <div>
+          <img src="./images/logo.jpeg" class="w-32 h-18 inline" alt="Company Logo"/>
+        </div>
+        <div class="text-xl flex justify-center gap-3 px-4 bg-red-700 rounded-l-lg items-center">
+          <a href="#about" class="hover:underline">About</a>
+          <a href="#contact" class="hover:underline">Contact</a>
+        </div>
       </div>
-      <div class="text-xl flex justify-center gap-3 px-4 bg-red-700 rounded-l-lg items-center">
-        <a href="#">About</a>
-        <a href="#">Contact</a>
-      </div>
-    </div>
-    <h1 class="text-3xl font-bold text-center mt-14">
-      Rodent & Removal
-    </h1>
-  </nav>
+      <h1 class="text-3xl font-bold text-center mt-14">
+        Rodent & Removal
+      </h1>
+    </nav>
 
-  <main class="mt-16 px-4">
-    <section>
+    <section class="mt-12 px-4">
       <p class="text-4xl text-center font-bold">
-      <span id="animated-text"></span><span id="cursor">|</span>
+        <span id="animated-text"></span>
+        <span id="cursor">|</span>
       </p>
       <p class="mx-auto text-center mt-8">sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi</p>
 
       <div class="mt-32 text-center">
-        <button class="inline px-10 py-3 bg-red-700 rounded-2xl">Services</button>
+        <a href="#services" class="inline px-10 py-3 bg-red-700 rounded-2xl text-xl hover:bg-red-800">Services</a>
       </div>
     </section>
+  </header>
 
-    <section>
-      <img src="https://placehold.co/200" />
-      <h2>Hunting</h2>
-      <p>
-        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
-      </p>
+  <main class="px-4">
+    <section id="services" class="relative">
+      <div class="swiper" id="servicesCarousel">
+        <div class="swiper-wrapper">
+
+          <div class="swiper-slide">
+            <img src="https://placehold.co/200" class="mx-auto" />
+            <h2 class="text-center text-xl mt-4 mb-2">Hunting</h2>
+            <p class="text-center">
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+            </p>
+          </div>
+
+          <div class="swiper-slide">
+            <img src="https://placehold.co/200" class="mx-auto" />
+            <h2 class="text-center text-xl mt-4 mb-2">Cleaning</h2>
+            <p class="text-center">
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+            </p>
+          </div>
+
+        </div> <!-- .swiper-wrapper -->
+        <div class="swiper-button-next text-red-700 hover:text-red-800"></div>
+        <div class="swiper-button-prev text-red-700 hover:text-red-800"></div>
+
+        <div class="swiper-pagination relative mt-4"></div>
+      </div> <!-- #servicesCarousel -->
+    </section> <!-- #services -->
+
+    <section id="contact">
+      <h2 class="text-2xl">Contact</h2>
+      <h3>Hello World.</h3>
+      <p>123456789</p>
+      <p>125 hello address</p>
     </section>
   </main>
 </body>

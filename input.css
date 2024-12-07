@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  scroll-behavior: smooth;
+}
+
 #cursor {
   display: inline-block;
   background-color: black;
@@ -10,4 +14,11 @@
 
 @keyframes blink {
   50% { opacity: 0; }
+}
+
+.swiper-pagination-bullet {
+  @apply bg-red-300; /* Use a lighter shade for inactive bullets */
+}
+.swiper-pagination-bullet-active {
+  @apply bg-red-700; /* Keep the active bullet with the original color */
 }

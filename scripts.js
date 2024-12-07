@@ -31,4 +31,16 @@
   type();
 })();
 
+// Swiper
+const swiper = new Swiper("#servicesCarousel", {
+  loop: true,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
 
