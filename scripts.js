@@ -2,11 +2,19 @@
 (() => {
   const textElement = document.getElementById("animated-text");
   const cursorElement = document.getElementById("cursor");
-  const words = ["Services...", "Rodents", "Cleaning"];
+  const words = [
+    "Services...",
+    "Hunting",
+    "Trapping",
+    "Baiting",
+    "Repealing",
+    "Carpentry",
+    "Disease Control"
+  ];
   let wordIndex = 0;
   let charIndex = 0;
   const charDelay = 75;
-  const wordDelay = 2500;
+  const wordDelay = 1500;
 
   function type() {
     const currentWord = words[wordIndex];

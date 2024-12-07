@@ -1,9 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+body {
+  font-family: "Mulish", sans-serif;
+}
+
 html {
   scroll-behavior: smooth;
+}
+
+header {
+  height: 100vh;
 }
 
 #cursor {
@@ -22,3 +32,5 @@ html {
 .swiper-pagination-bullet-active {
   @apply bg-red-700; /* Keep the active bullet with the original color */
 }
+
+
