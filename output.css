@@ -613,6 +613,14 @@ video {
   margin-bottom: 4rem;
 }
 
+.mb-24{
+  margin-bottom: 6rem;
+}
+
+.mb-28{
+  margin-bottom: 7rem;
+}
+
 .inline{
   display: inline;
 }
